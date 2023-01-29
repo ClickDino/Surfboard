@@ -1,0 +1,32 @@
+.question-section {
+  // width: 100vw;
+  // height: 100vh;
+  height: rem(652px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+.section__title {
+  font-size: rem(48px);
+  font-weight: bold;
+  color: #292929;
+  margin-bottom: rem(60px);
+  text-align: center;
+  text-transform: uppercase;
+}
+.headline {
+  text-align: center;
+}
+.headline__title {
+  margin-top: rem(103px);
+  margin-bottom: rem(17px);
+}
+.headline__subtitle {
+  margin-bottom: rem(49px);
+  padding: 0 27%;
+
+  @include phones {
+    padding: 0 7%;
+  }
+}

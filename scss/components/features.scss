@@ -1,0 +1,24 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.features__item {
+  margin-right: rem(46px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.icon {
+  width: rem(41px);
+  height: rem(41px);
+  margin-right: rem(7px);
+}
+
+.feature__text {
+  font-size: rem(16px);
+  max-width: rem(90px);
+  color: #fff;
+}

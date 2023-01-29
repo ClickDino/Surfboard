@@ -1,0 +1,15 @@
+.order-section {
+  // width: 100vw;
+  // height: 100vh;
+  height: 100%;
+  background: url(../img/order/order.jpg) center center no-repeat;
+  background-size: cover;
+
+  @include tablets {
+    background: url(../img/order/order-bg-tablets.jpg)center center no-repeat;
+  }
+}
+.section__title--light {
+  color: #fff;
+  padding-top: rem(62px);
+}

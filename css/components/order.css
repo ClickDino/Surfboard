@@ -1,0 +1,10 @@
+.order-section {
+  min-height: 100vh;
+  min-height: 652px;
+  background: url(../img/order/order.jpg) center no-repeat;
+}
+
+.section__title--light {
+  color: #fff;
+  padding-top: 62px;
+}

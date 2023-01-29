@@ -1,0 +1,41 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+
+$tablets:768px;
+$phones:480px;
+
+// colors
+$colortxt: #666666;
+$colorbtn: #fedb3f;
+$colortitle: #000;
+
+// z-index
+$z-fixed-menu: 100;
+
+@import "media"; 
+
+// normalize
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+// setups
+@import url(https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap);
+@import "layout";
+
+// components
+@import "components/hero.scss";
+@import "components/header.scss";
+@import "components/features.scss";
+@import "components/btn.scss";
+@import "components/question.scss";
+@import "components/benefits.scss";
+@import "components/slider.scss";
+@import "components/reviews.scss";
+@import "components/interactive-avatar.scss";
+@import "components/order.scss";
+@import "components/form.scss";
+@import "components/radio.scss";
+@import "components/fixed-menu.scss";
+@import "components/hamburger.scss";
+@import "components/footer.scss";

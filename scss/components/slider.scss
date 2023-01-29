@@ -1,0 +1,134 @@
+.slider {
+    background: #F8FAF9;
+    height:rem(652px);
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+
+        &:hover {
+            cursor: pointer;
+        }
+        &--left {
+            left: 0;
+        }
+        &--right {
+            rotate: 180deq;
+            right: 0;
+        }
+        &--icon {
+            height: rem(40px);
+            width: rem(25px);
+        }
+    }
+
+    &__list {
+        display: flex;
+        position: relative;
+        right: 0;
+        transition: 2s;
+
+        // @include tablets {
+        //     flex-direction: column;
+        // }
+
+
+        &-wrap {
+            width: rem(850px);
+            overflow: hidden;
+            display: flex;
+            transition: 2s;
+        }
+    
+    }
+
+    &__item {
+        width: rem(850px);
+    }
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+        &__wrap {
+            width: 45%;
+            // margin-left: rem(60px);
+        }
+    }
+
+    &__content {
+        width: 50%;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(36px);
+        line-height: rem(43px);
+        text-transform: uppercase;
+        color: $colortitle;
+
+        &-wrap {
+            margin-bottom: rem(24px);
+        }
+    }
+
+    &__desc {
+        margin-bottom: rem(20px);
+    }
+
+    &__params {
+        margin-bottom: rem(52px);
+    }
+
+    &__info {
+        display: flex;
+        margin-bottom: rem(15px);
+    }
+    
+    &__bottom {
+        display: flex;
+    }
+    
+    &__price {
+        font-weight: 300;
+        font-size: rem(60px);
+        line-height: rem(60px);
+        color: $colortitle;
+        margin-right: rem(65px);
+    }
+    
+}
+
+.info {
+    &__item {
+        margin-right: rem(50px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(22px);
+        color: $colortitle;
+
+}
+
+
+}
+
+
+
+

@@ -1,0 +1,81 @@
+.hero-section {
+  // width: 100vw;
+  height: rem(652px);
+  background: url(../img/hero/main.jpg) no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.hero-section {
+  @include tablets {
+    min-height: 1000px;
+    background: url(../img/hero/main-bg-tablet.png) no-repeat ;
+  }
+}
+
+.hero__title-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: rem(100px);
+}
+
+.hero__title-section {
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero__main-title {
+  font-size: rem(48px);
+  line-height: 1.1;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: rem(15px);
+  text-transform: uppercase;
+
+
+  @include tablets {
+    padding: 0 2%;
+    // margin-top: 45%;
+  }
+
+  @include phones {
+    // padding: 0 50%;
+    // margin-top: 48%;
+  }
+}
+.hero__main-title-wrap {
+  @include phones {
+    // display: flex;
+    // flex-direction: column;
+  }
+}
+
+.hero__title-desc {
+  font-size: rem(21px);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: rem(28px);
+
+  
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
+}

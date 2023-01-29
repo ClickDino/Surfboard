@@ -1,0 +1,88 @@
+.benefits {
+  display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(19px);
+  }
+
+  &::before {
+    content: url(../../img/benefits/circles.svg);
+    position: absolute;
+    top: rem(50px);
+    right: 0;
+    transform: translateX(50%);
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.benefit__title {
+  font-size: rem(27px);
+  font-weight: bold;
+  color: #292929;
+  margin-bottom: rem(20px);
+
+  @include phones {
+    margin-bottom: rem(2px);
+  }
+}
+
+
+.benefit {
+  text-align: center;
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
+}
+
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: rem(128px);
+  height: rem(128px);
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @include phones {
+    // display: none
+  }
+}
+
+.benefit__icon {
+  width: rem(68px);
+  height: rem(68px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
