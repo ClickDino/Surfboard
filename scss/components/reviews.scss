@@ -26,13 +26,13 @@
       margin-bottom: rem(14px);
       }
     }
-  // .reviews__item {
-  //   @include tablets {
-  //     display: flex;
-  //     flex-direction: column;
-  //     background-color: #000;
-  //   }
-  // }
+  .reviews__item {
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+  }
   
 
   &__authors {
