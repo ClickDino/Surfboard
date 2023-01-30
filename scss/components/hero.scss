@@ -43,20 +43,22 @@
 
   @include tablets {
     padding: 0 2%;
-    // margin-top: 45%;
+    // margin-top: 65%;
   }
 
   @include phones {
-    // padding: 0 50%;
+    padding: 0 2%;
     // margin-top: 48%;
+    font-size: rem(20px);
+    line-height: 1.5;
   }
 }
-.hero__main-title-wrap {
-  @include phones {
-    // display: flex;
-    // flex-direction: column;
-  }
-}
+// .hero__main-title-wrap {
+//   @include phones {
+//     // display: flex;
+//     // flex-direction: column;
+//   }
+// }
 
 .hero__title-desc {
   font-size: rem(21px);

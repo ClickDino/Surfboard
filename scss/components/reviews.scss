@@ -4,9 +4,7 @@
   height: rem(652px);
   }
 
-  &__title {
-    text-transform: uppercase;
-    color: $colortitle;
+.reviews__title {
     font-weight: 700;
     font-size: rem(48px);
     line-height: rem(58px);
@@ -16,7 +14,7 @@
       text-align: center;
     }
   }
-  &__list {
+.reviews__list {
     display: flex;
     position: relative;
 
@@ -26,16 +24,16 @@
       margin-bottom: rem(14px);
       }
     }
-  .reviews__item {
-    @include tablets {
-      display: flex;
-      flex-direction: column;
-      background-color: #000;
-    }
-  }
+  // .reviews__item {
+  //   @include tablets {
+  //     display: flex;
+  //     flex-direction: column;
+  //     background-color: #000;
+  //   }
+  // }
   
 
-  &__authors {
+  .review__authors {
     display: flex;
     justify-content: center;
   }
