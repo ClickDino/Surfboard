@@ -1,46 +1,45 @@
 .slide__params {
-    max-width: 91px;
-    margin-bottom: rem(52px);
-    cursor: pointer;
-}
+  max-width: rem(91px);
+  margin-bottom: rem(52px);
+  cursor: pointer;
 
+  @include tablets {
+    display: none;
+  }
+}
 
 .slide__params:hover .dropdown {
-    display: block;
-    // cursor: pointer;
+  display: block;
+  // cursor: pointer;
 }
-
 
 .dropdown {
-    position: absolute;
-    top: 0;
-    left: 31%;
-    display: none;
+  position: absolute;
+  top: 10%;
+  left: 31%;
+  display: none;
 }
 .dropdown__menu-list {
-    min-width: rem(273px);
-    height: rem(291px);
-    background-color: rgba(255, 255, 255, 0.7);
-    // background-color: aqua;
-    border-radius: 4px;
+  min-width: rem(273px);
+  height: rem(291px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
 }
 .dropdown__menu-item {
-    display: flex;
-    padding: rem(14px) rem(18px);
-    
+  display: flex;
+  padding: rem(14px) rem(18px);
 }
 .dropdown__icon {
-    margin-right: rem(10px);
-    
+  margin-right: rem(10px);
 }
 .dropdown__desc {
-    margin-right: rem(20px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  margin-right: rem(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .dropdown__param {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
