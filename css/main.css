@@ -604,6 +604,7 @@ img {
 }
 
 .slide__params {
+  max-width: 91px;
   margin-bottom: 2.8888888889rem;
   cursor: pointer;
 }

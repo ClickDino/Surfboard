@@ -1,7 +1,9 @@
 .slide__params {
+    max-width: 91px;
     margin-bottom: rem(52px);
     cursor: pointer;
 }
+
 
 .slide__params:hover .dropdown {
     display: block;
