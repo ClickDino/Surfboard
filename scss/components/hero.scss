@@ -1,7 +1,7 @@
 .hero-section {
   // width: 100vw;
   height: rem(652px);
-  background: url(../img/hero/main.jpg) no-repeat;
+  background: url(../img/hero/main.jpg) 100% no-repeat;
   background-size: cover;
   margin-top: 0;
 }
@@ -9,7 +9,7 @@
 .hero-section {
   @include tablets {
     min-height: 1000px;
-    background: url(../img/hero/main-bg-tablet.png) no-repeat ;
+    background: url(../img/hero/main-bg-tablet.png) 100% no-repeat ;
   }
 }
 

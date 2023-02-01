@@ -47,11 +47,11 @@
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
-            <div class="hamburger">
+            <a href="#popup" class="hamburger popup-link">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
-            </div>
+            </a>
           </header>
           <div class="hero__title-section">
             <div class="hero__main-title-wrap">
@@ -179,7 +179,7 @@
           <div class="slider__list-wrap">
             <ul class="slider__list" id="items">
               <li class="slider__item slide">
-                <div class="slide__img-wrap">
+                <div class="slider__img-wrap">
                   <img src="./img/shop/board-one.png" alt="longboard">
                 </div>
                 <div class="slide__content">
@@ -187,6 +187,35 @@
                     <div class="slide__img-wrap">
                       <img src="./img/shop/options-icon.png" alt="options-icon">
                     </div>
+                    <nav class="dropdown">
+                      <ul class="dropdown__menu-list">
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/length.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Длина доски</div>
+                          <div class="dropdown__param">от 2,5 м</div>
+                        </li>
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/width.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Ширина доски</div>
+                          <div class="dropdown__param">от 40 см</div>
+                        </li>
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/thickness.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Толщина</div>
+                          <div class="dropdown__param">8 см</div>
+                        </li>
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/life time.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Срок службы</div>
+                          <div class="dropdown__param">5 лет</div>
+                        </li>
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/weight.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Вес</div>
+                          <div class="dropdown__param">7-8 кг</div>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                   <div class="slide__title-wrap">
                     <h2 class="slide__title">Лонгборд 2.0</h2>
@@ -210,7 +239,7 @@
                 </div>
               </li>
               <li class="slider__item slide">
-                <div class="slide__img-wrap">
+                <div class="slider__img-wrap">
                   <img src="./img/shop/board-two.png" alt="shortboard">
                 </div>
                 <div class="slide__content">
@@ -218,6 +247,35 @@
                     <div class="slide__img-wrap">
                       <img src="./img/shop/options-icon.png" alt="options-icon">
                     </div>
+                    <nav class="dropdown">
+                      <ul class="dropdown__menu-list">
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/length.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Длина доски</div>
+                          <div class="dropdown__param">от 1,5 м</div>
+                        </li>
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/width.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Ширина доски</div>
+                          <div class="dropdown__param">от 30 см</div>
+                        </li>
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/thickness.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Толщина</div>
+                          <div class="dropdown__param">8 см</div>
+                        </li>
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/life time.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Срок службы</div>
+                          <div class="dropdown__param">5 лет</div>
+                        </li>
+                        <li class="dropdown__menu-item">
+                          <img src="./img/menu/weight.svg" alt="" class="dropdown__icon">
+                          <div class="dropdown__desc">Вес</div>
+                          <div class="dropdown__param">7-8 кг</div>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                   <div class="slide__title-wrap">
                     <h2 class="slide__title">Шортборд</h2>
@@ -491,36 +549,40 @@
     <div class="popup" id="popup">
       <div class="popup__body">
         <div class="popup__content">
-          <a href="" class="popup__close"></a>
-          <nav class="popup__menu">
-            <ul class="menu__list-popup">
-                <li class="menu__item-popup">
-                  <a href="#" class="menu__link-popup">О нас</a>
+          <a href="#" class="popup__close">
+            <img src="./img/modal/close.svg" alt="close">
+          </a>
+          <nav class="popup-menu">
+            <ul class="popup-menu__list">
+                <li class="popup-menu__item">
+                  <a href="#" class="popup-menu__link">О нас</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link-popup">Серфборды</a>
+                <li class="popup-menu__item">
+                  <a href="#" class="popup-menu__link">Серфборды</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link-popup">Команда</a>
+                <li class="popup-menu__item">
+                  <a href="#" class="popup-menu__link">Команда</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link-popup">Меню</a>
+                <li class="popup-menu__item">
+                  <a href="#" class="popup-menu__link">Меню</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link-popup">Отзывы</a>
+                <li class="popup-menu__item">
+                  <a href="#" class="popup-menu__link">Отзывы</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link-popup">Как мы работаем</a>
+                <li class="popup-menu__item">
+                  <a href="#" class="popup-menu__link">Как мы работаем</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link-popup">Контакты</a>
+                <li class="popup-menu__item">
+                  <a href="#" class="popup-menu__link">Контакты</a>
                 </li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
-    <script src="./review.js"></script>
-    <script src="./slider.js"></script>
+    <script src="./js/review.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/popup.js"></script>
+
   </body>
 </html>

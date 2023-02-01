@@ -1,13 +1,12 @@
 .reviews {
-  // width: 100vw;
-  // height: 100vh;
-  height: rem(652px);
+  height: 100%;
   }
 
 .reviews__title {
     font-weight: 700;
     font-size: rem(48px);
     line-height: rem(58px);
+    color: #000;
 
     &-wrap {
       margin-bottom: rem(32px);
@@ -15,38 +14,27 @@
     }
   }
 .reviews__list {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
+}
 
-    &-wrap {
-      background: #F8FAF9;
-      padding: rem(42px);
-      margin-bottom: rem(14px);
-      }
+.reviews__list-wrap {
+    background: #F8FAF9;
+    padding: rem(42px);
+    margin-bottom: rem(14px);
+    
+    @include tablets {
+      flex-direction: column;
     }
-  // .reviews__item {
-  //   @include tablets {
-  //     display: flex;
-  //     flex-direction: column;
-  //     background-color: #000;
-  //   }
-  // }
-  
 
-  .review__authors {
-    display: flex;
-    justify-content: center;
   }
 
-// .reviews__list-wrap {
-//   @include tablets {
-//     display: flex;
-//     flex-direction: column;
-//     text-align: center;
-//     align-items: center;
-//     background-color: #000;
-//   }
-// }
+.reviews__authors {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(63px);
+    max-width: 100%;
+  }
 
 
 .author {
@@ -82,7 +70,7 @@
   right: 0;
   bottom: 0;
   opacity: 0;
-  transition: 1s;
+  transition: 1.5s;
 
   &__active {
     position: static;
@@ -94,36 +82,37 @@
     width: rem(253px);
     height: rem(264px);
 
+    @include tablets {
+      width: rem(130px);
+      height: rem(130px);
+    }
+
     &-wrap {
       width: 100%;
       margin-right: rem(40px);
-
-      @include tablets {
-        width: rem(130px);
-        height: rem(130px);
       }
     }
   }
-  &__content {
+.review__content {
     padding: rem(28px) 0;
-  }
+}
 
-  &__title {
+.review__title {
     margin-bottom: rem(14px);
     font-weight: 700;
     font-size: rem(27px);
     line-height: rem(32px);
     color: $colortitle;
   }
-  &__text {
+.review__text {
     margin-bottom: rem(24px);
     width: 80%;
   }
-  &__author {
+.review__author {
     font-weight: 500;
     color: #000;
   }
-}
+
 
 
 // .reviews__display {
@@ -133,11 +122,11 @@
 // .reviews__display-inner {
 //   display: flex;
 
-//   @include tablets {
-//     flex-direction: column;
-//     text-align: center;
-//     align-items: center;
-//   }
+  // @include tablets {
+    // flex-direction: column;
+    // text-align: center;
+    // align-items: center;
+  // }
 // }
 
 // .reviews__avatar {
