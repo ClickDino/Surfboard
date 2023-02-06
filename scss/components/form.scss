@@ -45,6 +45,8 @@
   padding: rem(18px) rem(11px);
   border: solid rem(3px) transparent;
 
+  
+
   @include tablets {
     padding: rem(10px) rem(11px);
   }
@@ -67,6 +69,8 @@
     outline: none;
   }
 }
+
+
 .form__title {
   color: #fff;
 }

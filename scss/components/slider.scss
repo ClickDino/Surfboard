@@ -1,6 +1,6 @@
 .slider {
     background: #F8FAF9;
-    height:100%;
+    min-height:100%;
 
 }
 
@@ -47,6 +47,12 @@
     overflow: hidden;
     display: flex;
     transition: 2s;
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
 
 }
 .slider__item {
