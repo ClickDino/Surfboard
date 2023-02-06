@@ -18,9 +18,12 @@
         display: none;
     }
 }
-// .team--version--desktop {
-//     display: none;
-// }
+.team--version--mobile {
+    display: none;
+    @include tablets {
+        display: flex;
+    }
+}
 
 .team__item {
     flex: 1;

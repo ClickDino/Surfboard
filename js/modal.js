@@ -1,10 +1,21 @@
 const validateFields = (form, fieldsArray) => {
-    
+
+    fieldsArray.forEach((field) => {
+        field.removeClass("input-error");
+        if (field.val().trim() == "") {
+            field.addClass("input-error");
+        }
+    });
+
+    const errorFields = form.find(".input-error");
+
+    return errorFields.length == 0;
 }
 $('.form').submit((e) => {
     e.preventDefault();
 
     const form = $(e.currentTarget);
+
     const name = form.find("[name='name']");
     const phone = form.find("[name='phone']");
     const street = form.find("[name='street']");
@@ -15,18 +26,16 @@ $('.form').submit((e) => {
     const comment = form.find("[name='comment']");
     const to = form.find("[name='to']");
 
-    [name, phone, street, home, part, appartment, floor, comment, to].forEach((field) => {
-        field.removeClass("input-error");
-        if (field.val().trim( == "") {
-            field.addClass("input-error");
-        })
-    });
+    const modal = $("#modal");
+    const content = modal.find(".modal__content");
 
-    
+    modal.removeClass("error-modal");
 
-    const errorFields = form.find(".input-error");
-    
-    if(errorFields.length == 0) {
+    const isValid = validateFields(form,[name, phone, street, home, part, appartment, floor, comment, to]);
+
+
+
+    if(isValid) {
         $.ajax({
             url:"https://webdev-api.loftschool.com/sendmail",
             method: "post",
@@ -40,15 +49,26 @@ $('.form').submit((e) => {
                 floor:floor.val(),
                 comment:comment.val(),
                 to:to.val(),
+            },
+            success:data => {
+                content.text(data.message);
+                // console.log(data);
+                $.fancybox.open({
+                    src: "#modal",
+                    type: "inline",
+                });
+            },
+            error: data => {
+                const massage = data.responseJSON.massage;
+                content.text(massage);
+                modal.addClass("error-modal");
+                $.fancybox.open({
+                    src: "#modal",
+                    type: "inline",
+                });
             }
         });
     }
-
-
-    // $.fancybox.open({
-    //     src: "#modal",
-    //     type: "inline"
-    // })
 });
 
 $('.app-submit-btn').click(e => {

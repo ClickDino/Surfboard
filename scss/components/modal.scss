@@ -20,14 +20,19 @@
     background: #fff;
     padding: rem(30px);
     text-align: center;
+    border-radius: 5px;
 }
 
 .input-error {
     border-color: aqua;
-  }
+}
+
+.error-modal {
+    color: red;
+}
 
 .modal__text {
     color: #000;
     font-weight: 500;
-    margin-bottom: rem(18px);
+    margin-bottom: rem(36px);
 }
