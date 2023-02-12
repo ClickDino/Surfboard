@@ -1,0 +1,55 @@
+// .section {
+//     height: 100%;
+//     min-height: rem(652px);
+// }
+.menu-section {
+    background: url(../../img/acc/acc-bg.jpg) no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__title {
+    text-align:start ;
+}
+
+.menu-acco__list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.menu-acco__item {
+    display: flex;
+}
+
+.menu-acco__link {
+    position: relative;
+    width: 100px;
+}
+
+.menu-acco__link-text {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+    padding-left: rem(32px);
+    padding-top: rem(19px);
+}
+.menu-acco__content {
+    height: 100%;
+    backdrop-filter: blur(5px);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+    color: #fff;
+}
+.menu-acco__container {
+    padding: 38px 31px 80px 36px;
+}

@@ -1,0 +1,49 @@
+.menu-section {
+  min-height: 100%;
+  background: url(../../img/acc/acc-bg.jpg) center center no-repeat;
+}
+
+.menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-title {
+  position: absolute;
+}
+
+.menu-acco__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.menu-acco__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 100%;
+}
+
+.menu-acco__link {
+  position: relative;
+  width: 80px;
+}
+
+.menu-acco__link-text {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  -webkit-transform: rotate(-90beg) translate(-50%, -50%);
+          transform: rotate(-90beg) translate(-50%, -50%);
+}

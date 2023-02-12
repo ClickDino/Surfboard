@@ -1,7 +1,6 @@
 .slider {
-    background: #F8FAF9;
+    // background: #F8FAF9;
     min-height:100%;
-
 }
 
 .slider__container {
@@ -65,7 +64,6 @@
         text-align: center;
         align-items: center;
     } 
-
 }
 
 .slider__img-wrap {
@@ -86,7 +84,9 @@
     margin-top: rem(65px);
     width: 50%;
 
-   
+    @include tablets {
+        width: 80%;
+    }
 }
 
 .slide__title {
@@ -110,6 +110,10 @@
 .slide__info {
     display: flex;
     margin-bottom: rem(15px);
+
+    // @include tablets {
+    //     justify-content: center;
+    // }
 }
     
 .slide__bottom {
@@ -122,6 +126,11 @@
     line-height: rem(60px);
     color: $colortitle;
     margin-right: rem(65px);
+
+    @include phones {
+        // font-size: 20px;
+        margin-right: 10px;
+    }
 }
 
 .info {
