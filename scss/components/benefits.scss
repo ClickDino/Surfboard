@@ -1,5 +1,6 @@
 .benefits {
   display: flex;
+  min-height: rem(652px);
 
   @include phones {
     flex-direction: column;

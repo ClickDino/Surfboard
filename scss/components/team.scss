@@ -1,5 +1,6 @@
 .team-section {
-  min-height: 100%;
+  height: 100vh;
+  min-height: rem(652px);
   display: flex;
   margin-bottom: 60px;
 }
@@ -64,7 +65,7 @@
 
 .team--version--desktop .team__content {
   position: absolute;
-  top: 100%;
+  // top: 100%;
 }
 .team__content {
   overflow: hidden;
