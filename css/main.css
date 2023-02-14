@@ -47,26 +47,8 @@ body {
   height: 100%;
 }
 
-.section {
-  width: 100%;
-  height: 100vh;
-  min-height: 36.2222222222rem;
-  min-height: 36.2222222222rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .container {
   width: 95%;
-  height: 100%;
   max-width: 940px;
   margin: 0 auto;
 }
@@ -114,6 +96,7 @@ a {
 }
 
 img {
+  display: block;
   max-height: 100%;
 }
 
@@ -121,7 +104,8 @@ img {
   max-height: 100vh;
   min-height: 36.2222222222rem;
   background: url(../img/hero/main.jpg) 100% no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 0;
 }
 
@@ -359,7 +343,8 @@ img {
 }
 
 .question-section {
-  max-height: 100%;
+  height: 100vh;
+  max-height: 36.2222222222rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +356,20 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 6rem;
+}
+
+.question-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .section__title {
@@ -496,8 +495,9 @@ img {
           transform: translate(-50%, -50%);
 }
 
-.slider {
-  min-height: 100%;
+.slider-section {
+  height: 100vh;
+  min-height: 36.2222222222rem;
 }
 
 .slider__container {
@@ -515,6 +515,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  height: 100%;
 }
 
 .slider__arrow {
@@ -595,10 +596,15 @@ img {
   max-width: 45%;
 }
 @media screen and (max-width: 768px) {
-  .slider__img-wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .slider__img-wrap .img-slider {
+    position: relative;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__img-wrap .img-slider {
+    position: relative;
+    top: 50%;
   }
 }
 
@@ -643,11 +649,25 @@ img {
   display: flex;
   margin-bottom: 0.8333333333rem;
 }
+@media screen and (max-width: 768px) {
+  .slide__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .slide__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .slide__bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .slide__price {
@@ -752,6 +772,23 @@ img {
   margin-bottom: 60px;
 }
 
+.team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -851,6 +888,11 @@ img {
   height: 290px;
 }
 
+.section {
+  height: 100%;
+  min-height: 36.2222222222rem;
+}
+
 .menu-section {
   background: url(../../img/acc/acc-bg.jpg) no-repeat;
   position: relative;
@@ -919,7 +961,22 @@ img {
 }
 
 .reviews {
+  height: 100%;
   min-height: 36.2222222222rem;
+}
+
+.reviews__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .reviews__title {
@@ -941,6 +998,12 @@ img {
   background: #F8FAF9;
   padding: 2.3333333333rem;
   margin-bottom: 0.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__list-wrap {
+    margin-bottom: 0;
+    padding: 0.2777777778rem;
+  }
 }
 
 .reviews__authors {
@@ -1047,17 +1110,33 @@ img {
 }
 
 .order-section {
-  max-height: 100%;
+  height: 100vh;
+  min-height: 36.2222222222rem;
   background: url(../img/order/order.jpg) center center no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-@media screen and (max-width: 768px) {
-  .order-section {
-    background: url(../img/order/order-bg-tablets.jpg) center center no-repeat;
-  }
+
+.order-container {
+  height: 100%;
 }
 
 .section__title--light {
   color: #fff;
+}
+
+.player-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .player-section__container {
@@ -1097,8 +1176,10 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  background: url("../../img/player/screen.jpg") center center/cover no-repeat;
+  background: url("../../img/player/screen.jpg") center center no-repeat;
   cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .player__wrapper {
@@ -1232,25 +1313,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 3.2222222222rem;
-}
-
-.player__controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 35px;
-  background: #404040;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 25px;
 }
 
 .form {
@@ -1423,6 +1485,7 @@ img {
 
 .map-section {
   height: 100vh;
+  min-height: 36.2222222222rem;
 }
 
 #map {

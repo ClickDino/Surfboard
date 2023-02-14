@@ -1,13 +1,18 @@
 .order-section {
   // width: 100vw;
-  // height: 100vh;
-  max-height: 100%;
+  height: 100vh;
+  min-height: rem(652px);
   background: url(../img/order/order.jpg) center center no-repeat;
-  // background-size: cover;
+  object-fit: cover;
 
-  @include tablets {
-    background: url(../img/order/order-bg-tablets.jpg)center center no-repeat;
-  }
+  // @include tablets {
+  //   background: url(../img/order/order-bg-tablets.jpg)no-repeat;
+  //   object-fit: cover;
+  // }
+}
+
+.order-container {
+  height: 100%;
 }
 .section__title--light {
   color: #fff;

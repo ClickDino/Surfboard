@@ -3,7 +3,7 @@
   max-height: 100vh;
   min-height: rem(652px);
   background: url(../img/hero/main.jpg) 100% no-repeat;
-  background-size: cover;
+  object-fit: cover;
   margin-top: 0;
 }
 

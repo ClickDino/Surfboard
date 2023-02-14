@@ -1,6 +1,16 @@
 .reviews {
+  height: 100%;
   min-height: rem(652px);
   }
+
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+
 
 .reviews__title {
     font-weight: 700;
@@ -21,6 +31,11 @@
     background: #F8FAF9;
     padding: rem(42px);
     margin-bottom: rem(14px);
+
+    @include tablets {
+      margin-bottom: 0;
+      padding: rem(5px);
+    }
   }
 
 .reviews__authors {

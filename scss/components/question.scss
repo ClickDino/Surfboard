@@ -1,11 +1,17 @@
 .question-section {
-  // width: 100vw;
-  // height: 100vh;
-  max-height: 100%;
+  height: 100vh;
+  max-height: rem(652px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 6rem;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .section__title {
   margin-top: rem(62px);

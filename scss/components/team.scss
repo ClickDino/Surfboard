@@ -5,6 +5,14 @@
   margin-bottom: 60px;
 }
 
+.team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .team {
   display: flex;
   justify-content: space-between;

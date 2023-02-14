@@ -6,10 +6,10 @@ const carousel = $('#items').bxSlider({
 $('#left').click(e => {
     e.preventDefault();
     carousel.goToPrevSlide();
-})
+});
 
 
 $('#right').click(e => {
     e.preventDefault();
     carousel.goToNextSlide();
-})
+});
