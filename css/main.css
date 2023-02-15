@@ -103,7 +103,6 @@ img {
 
 .hero-section {
   height: 100%;
-  min-height: 36.2222222222rem;
   background: url(../img/hero/main.jpg) no-repeat;
   background-position: center;
   background-size: cover;
@@ -408,7 +407,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 36.2222222222rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 @media screen and (max-width: 480px) {
   .benefits {
@@ -893,11 +895,12 @@ img {
 
 .section {
   height: 100%;
-  min-height: 36.2222222222rem;
 }
 
 .menu-section {
   background: url(../img/acc/acc-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1114,10 +1117,9 @@ img {
 
 .order-section {
   height: 100%;
-  min-height: 36.2222222222rem;
   background: url(../img/order/order.jpg) center center no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-position: center;
+  background-size: cover;
 }
 
 .order-container {
@@ -1179,7 +1181,9 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  background: url("../img/player/screen.jpg") center center no-repeat;
+  background: url("../img/player/screen.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
   cursor: pointer;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1488,7 +1492,6 @@ img {
 
 .map-section {
   height: 100%;
-  min-height: 36.2222222222rem;
 }
 
 #map {
