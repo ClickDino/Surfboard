@@ -9,37 +9,36 @@ let inScroll = false;
 sections.first().addClass("active");
 
 const performTransition = (sectionEq) => {
-    if (inScroll == false) {
-        inScroll = true;
-        const position = sectionEq * -130;
-        
-        const currentSection = sections.eq(sectionEq);
-        const menuTheme = currentSection.attr("data-sidemenu-theme");
-        const sideMenu = $(".fixed-menu");
-        
-        if(menuTheme == "black") {
-            sideMenu.addClass("fixed-menu--shadowed");
-        } else {
-            sideMenu.removeClass("fixed-menu--shadowed");
-        }
-        display.css({
-            transform: `translateY(${position}%)`,
-        });
-      
-        sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+  if (inScroll == false) {
+    inScroll = true;
+    const position = sectionEq * -100;
 
-        
-        setTimeout(() => {
-            inScroll = false;
-            
-            sideMenu
-                .find(".fixed-menu__item")
-                .eq(sectionEq)
-                .addClass("fixed-menu__item--active")
-                .siblings()
-                .removeClass("fixed-menu__item--active");
-        },1300);
+    const currentSection = sections.eq(sectionEq);
+    const menuTheme = currentSection.attr("data-sidemenu-theme");
+    const sideMenu = $(".fixed-menu");
+
+    if (menuTheme == "black") {
+      sideMenu.addClass("fixed-menu--shadowed");
+    } else {
+      sideMenu.removeClass("fixed-menu--shadowed");
     }
+    display.css({
+      transform: `translateY(${position}%)`,
+    });
+
+    sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+
+    setTimeout(() => {
+      inScroll = false;
+
+      sideMenu
+        .find(".fixed-menu__item")
+        .eq(sectionEq)
+        .addClass("fixed-menu__item--active")
+        .siblings()
+        .removeClass("fixed-menu__item--active");
+    }, 1300);
+  }
 };
 
 const scrollViewport = (direction) => {
@@ -69,56 +68,47 @@ $(window).on("wheel", (e) => {
   }
 });
 
-$(window).on("keydown", e =>{
-    const tagName = e.target.tagName.toLowerCase();
+$(window).on("keydown", (e) => {
+  const tagName = e.target.tagName.toLowerCase();
 
-    if (tagName != "input" && tagName != "textarea") {
+  if (tagName != "input" && tagName != "textarea") {
+    switch (e.keyCode) {
+      case 38:
+        scrollViewport("prev");
+        break;
 
-        switch (e.keyCode) {
-            case 38:
-                scrollViewport("prev");
-                break;
-    
-            case 40:
-                scrollViewport("next");
-                break;
-        }
+      case 40:
+        scrollViewport("next");
+        break;
     }
+  }
 });
 
-$(".wrapper").on("touchmove", e => e.preventDefault());
+$(".wrapper").on("touchmove", (e) => e.preventDefault());
 
-$("[data-scroll-to]").click ((e) => {
-    e.preventDefault();
+$("[data-scroll-to]").click((e) => {
+  e.preventDefault();
 
-    const $this = $(e.currentTarget);
-    const target = $this.attr("data-scroll-to");
-    const reqSection = $(`[data-section-id=${target}]`);
+  const $this = $(e.currentTarget);
+  const target = $this.attr("data-scroll-to");
+  const reqSection = $(`[data-section-id=${target}]`);
 
-
-    performTransition(reqSection.index());
+  performTransition(reqSection.index());
 });
 
 if (isMobile) {
+  //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-    //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-    
-    $("#test").swipe( {
-        //Generic swipe handler for all directions
-        swipe:function(
-            event, 
-            direction, 
-            ) {
-                const scroller = viewportScroller();
-                let scrollDirection = "";
-    
-                if (direction == "up") scrollDirection = "next";
-                if (direction =="down") scrollDirection = "prev";
-    
-                scroller[scrollDirection]();
-        }
-      });
+  $("#test").swipe({
+    //Generic swipe handler for all directions
+    swipe: function (event, direction) {
+      const scroller = viewportScroller();
+      let scrollDirection = "";
 
+      if (direction == "up") scrollDirection = "next";
+      if (direction == "down") scrollDirection = "prev";
+
+      scroller[scrollDirection]();
+    },
+  });
 }
-
-
