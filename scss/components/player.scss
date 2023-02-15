@@ -40,9 +40,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: url("../../img/player/screen.jpg") center center no-repeat;
+    background: url("../img/player/screen.jpg") center center no-repeat;
     cursor: pointer;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .player__wrapper {
@@ -134,7 +134,7 @@
   }
   
   .player__playback-button, .player__volume-button {
-    background: #E01F3D;
+    background: rgb(232, 159, 23);
     border-radius: rem(44px);
     border: none;
     width: rem(10px);
@@ -158,7 +158,7 @@
       top: 50%;
       left: 0;
       right: 0;
-      background: #E01F3D;
+      background: rgb(232, 159, 23);
       display: block;
       transform: translateY(-50%);
     }

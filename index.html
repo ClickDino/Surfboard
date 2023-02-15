@@ -12,32 +12,32 @@
   <body>
     <div class="wrapper">
       <div class="maincontent">
-        <section data-section-id="hero" class="section hero-section">
+        <section data-sidemenu-theme="white" data-section-id="hero" class="section hero-section">
           <div class="container hero__container">
             <header class="header">
               <img src="./img/hero/logo.svg" alt="surf logo" class="logo" />
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
+                    <a href="" data-scroll-to="question" class="menu__link">О нас</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Серфборды</a>
+                    <a href="" data-scroll-to="slider" class="menu__link">Серфборды</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Команда</a>
+                    <a href="" data-scroll-to="team" class="menu__link">Команда</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Меню</a>
+                    <a href="" data-scroll-to="menu" class="menu__link">Меню</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
+                    <a href="" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Как мы работаем</a>
+                    <a href="" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="" data-scroll-to="map" class="menu__link">Контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -64,7 +64,7 @@
               <div class="hero__title-desc">
                 Самый большой выбор серфбордов в мире
               </div>
-              <a href="#" class="btn">Заказать</a>
+              <a href="" data-scroll-to="order" class="btn">Заказать</a>
             </div>
             <div class="hero__icons-section">
               <ul class="features">
@@ -97,7 +97,7 @@
           </div>
         </section>
         <!-- Секция преимуществ -->
-        <section data-section-id="question" class="section question-section">
+        <section data-sidemenu-theme="black" data-section-id="question" class="section question-section">
           <div class="container question-container">
             <div class="headline">
               <h2 class="section__title headline__title">Почему Surfboard?</h2>
@@ -168,7 +168,7 @@
           </div>
         </section>
         <!-- Секция продажи -->
-        <section data-section-id="slider" class="section slider-section">
+        <section data-sidemenu-theme="black" data-section-id="slider" class="section slider-section">
           <div class="container slider__container">
             <div class="slider__arrow slider__arrow--left">
               <a class="slider__arrow--icon" id="left" href="#">
@@ -442,7 +442,7 @@
           </div>
         </section>
         <!-- Секция команды -->
-        <section data-section-id="team" class="section team-section">
+        <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
           <div class="container team-container">
             <div class="section__title">Команда</div>
             <ul class="team team--version--desktop">
@@ -549,7 +549,7 @@
           </div>
         </section>
         <!-- Секция меню -->
-        <section data-section-id="menu" class="section menu-section">
+        <section data-sidemenu-theme="white" data-section-id="menu" class="section menu-section">
           <div class="container acco__container">
             <div class="section__title menu__title">Меню</div>
               <ul class="menu-acco__list">
@@ -591,7 +591,7 @@
           </div>
         </section>
         <!-- Секция отзывы -->
-        <section data-section-id="reviews" class="section reviews-section">
+        <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
           <div class="container reviews__container">
             <div class="reviews__title-wrap">
               <h2 class="section__title title">Отзывы</h2>
@@ -673,7 +673,7 @@
           </div>
         </section>
         <!-- Секция видео -->
-        <section data-section-id="video" class="section player-section">
+        <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
           <div class="container player__container">
             <h2 class="section__title">Как мы работаем</h2>
             <div class="player-section__container">
@@ -700,7 +700,7 @@
           </div>
         </section>
         <!-- Секция заказа -->
-        <section data-section-id="order" class="section order-section">
+        <section data-sidemenu-theme="white" data-section-id="order" class="section order-section">
           <div class="container order-container">
             <h2 class="section__title section__title--light">Закажите доставку</h2>
             <form class="form">
@@ -775,7 +775,7 @@
           </div>
         </section>
         <!-- Секция карты -->
-        <section data-section-id="map" class="section map-section">
+        <section data-sidemenu-theme="black" data-section-id="map" class="section map-section">
           <div id="map"></div>
         </section>
         <!-- Подвал -->
@@ -819,34 +819,34 @@
       </div>
     </div>
     <!-- Боковая панель -->
-    <nav class="fixed-menu">
+    <nav class="fixed-menu fixed-menu--shadowed">
       <ul class="fixed-menu__list">
         <li class="fixed-menu__item fixed-menu__item--active">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="hero" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="question" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="slider" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="team" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="menu" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="reviews" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="player" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="order" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="map" class="fixed-menu__link"></a>
         </li>
       </ul>
     </nav>
@@ -860,25 +860,25 @@
           <nav class="popup-menu">
             <ul class="popup-menu__list">
                 <li class="popup-menu__item">
-                  <a href="#" class="popup-menu__link">О нас</a>
+                  <a href="#" data-scroll-to="question" class="popup-menu__link">О нас</a>
                 </li>
                 <li class="popup-menu__item">
-                  <a href="#" class="popup-menu__link">Серфборды</a>
+                  <a href="#" data-scroll-to="slider" class="popup-menu__link">Серфборды</a>
                 </li>
                 <li class="popup-menu__item">
-                  <a href="#" class="popup-menu__link">Команда</a>
+                  <a href="#" data-scroll-to="team" class="popup-menu__link">Команда</a>
                 </li>
                 <li class="popup-menu__item">
-                  <a href="#" class="popup-menu__link">Меню</a>
+                  <a href="#" data-scroll-to="menu" class="popup-menu__link">Меню</a>
                 </li>
                 <li class="popup-menu__item">
-                  <a href="#" class="popup-menu__link">Отзывы</a>
+                  <a href="#" data-scroll-to="reviews" class="popup-menu__link">Отзывы</a>
                 </li>
                 <li class="popup-menu__item">
-                  <a href="#" class="popup-menu__link">Как мы работаем</a>
+                  <a href="#" data-scroll-to="player" class="popup-menu__link">Как мы работаем</a>
                 </li>
                 <li class="popup-menu__item">
-                  <a href="#" class="popup-menu__link">Контакты</a>
+                  <a href="#" data-scroll-to="map" class="popup-menu__link">Контакты</a>
                 </li>
             </ul>
           </nav>
@@ -898,6 +898,8 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
       <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -907,12 +909,13 @@
       <script src="./js/review.js"></script>
       <script src="./js/modal.js"></script>
     <script src="./js/carousel.js"></script>
-    <!-- <script src="./js/slider.js"></script> -->
     <script src="./js/popup.js"></script>
     <script src="./js/menu-acco.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/player.js"></script>
     <script src="./js/map.js"></script>
+    <script src="./js/ops.js"></script>
+    <!-- <script src="./js/slider.js"></script> -->
 
   </body>
 </html>

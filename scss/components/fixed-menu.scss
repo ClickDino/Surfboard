@@ -5,6 +5,11 @@
   z-index: $z-fixed-menu;
 }
 
+.fixed-menu--shadowed { 
+  background: #000 !important;
+  
+}
+
 .fixed-menu__item {
   margin-bottom: rem(5px);
 
