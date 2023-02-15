@@ -107,8 +107,6 @@ img {
   background: url(../img/hero/main.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin-top: 0;
 }
 
@@ -349,7 +347,7 @@ img {
 
 .question-section {
   height: 100%;
-  max-height: 36.2222222222rem;
+  min-height: 36.2222222222rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

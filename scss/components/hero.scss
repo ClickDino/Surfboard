@@ -5,14 +5,14 @@
   background: url(../img/hero/main.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  object-fit: cover;
+  // object-fit: cover;
   margin-top: 0;
 }
 
 .hero-section {
   @include tablets {
     min-height: 1000px;
-    background: url(../img/hero/main-bg-tablet.png)no-repeat ;
+    background: url(../img/hero/main-bg-tablet.png) no-repeat;
     background-position: center;
     background-size: cover;
   }
@@ -45,7 +45,6 @@
   margin-bottom: rem(15px);
   text-transform: uppercase;
 
-
   @include tablets {
     padding: 0 2%;
     // margin-top: 65%;
@@ -59,14 +58,11 @@
   }
 }
 
-
 .hero__title-desc {
   font-size: rem(21px);
   font-weight: 400;
   color: #fff;
   margin-bottom: rem(28px);
-
-  
 }
 
 .hero__container {
