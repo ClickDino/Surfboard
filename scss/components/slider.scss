@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100%;
 }
 
 .slider__arrow {
@@ -71,6 +70,9 @@
 .slider__img-wrap {
     margin-top: 65px;
     max-width: 45%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
     .img-slider {
         @include tablets {

@@ -4,7 +4,6 @@
   background: url(../img/order/order.jpg) center center no-repeat;
   background-position: center;
   background-size: cover;
-  // object-fit: cover;
 
   // @include tablets {
   //   background: url(../img/order/order-bg-tablets.jpg)no-repeat;
@@ -12,9 +11,7 @@
   // }
 }
 
-.order-container {
-  height: 100%;
-}
+
 .section__title--light {
   color: #fff;
   // padding-top: rem(62px);
